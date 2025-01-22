@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./font/HankenGrotesk-Bold.ttf')
+    format('truetype');
+    font-weight: 900;
+  
+}
+
+.container{
+    display: flex;
+    margin-top: 10%;
+    gap: 2rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+
+/* Left Section Result Card */
+.result-card{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    flex: 1;
+    
+}
+
+.result-card h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'CustomFont';
+}
+
+.score{
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0) );
+    color: #fff;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-family: 'CustomFont';
+    font-weight: 800;
+   
+}
+
+.score-value{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.score-out-of{
+    font-size: 1rem;
+    color: grey;
+}
+
+.result-card h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: 'CustomFont';
+}
+
+.description{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    line-height: 1.5;
+    font-family: 'CustomFont';
+ 
+}
+
+/* Right Section: Summary Card */
+.summary-card{
+    flex: 1;
+    padding: 2rem;
+}
+
+.summary-card h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 'CustomFont';
+}
+
+.summary-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: 'CustomFont';
+    width: 90%
+}
+
+.label{
+    margin-left: -65%;
+}
+
+.list-1{
+    background-color: hsla(0, 100%, 67%, 0.2);
+}
+
+.list-2{
+    background-color: hsla(39, 100%, 56%, 0.2);
+}
+
+.list-3{
+    background-color: hsla(166, 100%, 37%,0.15);
+}
+
+.list-4{
+    background-color:  hsla(234, 85%, 45%, 0.2);
+}
+
+.reaction{
+  color: hsl(0, 100%, 67%);
+}
+.Memory{
+    color:  hsl(39, 100%, 56%);
+}
+.verbal{
+    color: hsl(166, 100%, 37%);
+}
+.visual{
+    color:  hsl(234, 85%, 45%);
+}
+
+.lst{
+    color: grey;
+}
+
+/* Button */
+.continue-btn{
+    width: 100%;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+    font-family: 'CustomFont';
+}
+
+.continue-btn:hover{
+    background: hsl(234, 85%, 45%);
+}
+
+@media only screen and (max-width:600px){
+    .container{
+        display: block;
+    }
+
+    .result-card{
+        width: 100%;
+        margin: 0;
+    }
+
+    .summary-item{
+        width: 100%;
+    }
+
+    .label{
+        margin-left: -30%;
+    }
+}
