@@ -91,4 +91,5 @@ I am going to explore more on media queries especially for monile device like ta
 
 - Frontend Mentor - [@Wizdev0](https://www.frontendmentor.io/profile/Wizdev0)
 - Twitter - [@otutech](https://www.twitter.com/otutech)
+- Github - [@Wizdev0](https://github.com/Wizdev0)
 
